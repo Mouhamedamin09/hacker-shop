@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'Aleo';
+  src: url('../assets/fonts/Aleo-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Aleo', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.625rem 1.25rem;
+  position: relative;
+  margin-right: 250px;
+}
+
+.logo {
+  width: 5.313rem;
+  margin-left: 6.875rem;
+  cursor: pointer;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 2.813rem;
+  margin-left: 15rem;
+}
+
+.navLinks li {
+  display: inline;
+  align-self: center;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: #000814;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Aleo', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.cartIcon {
+  width: 30px;
+  height: 31px;
+  transition: transform 0.3s ease;
+  
+}
+
+.cartIcon:hover {
+  transform: scale(1.1);
+}
+
+
+
+.navLinks a:hover {
+  color: #FCBD01;
+}
+
+.cartCount {
+  position: relative;
+  top: -20px;
+  right: 10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.navLink {
+  cursor: pointer;
+}
+
+
+/* Media Queries */
+@media (max-width: 1240px) {
+  .navLinks {
+    margin-left: 0;
+  }
+
+  .search {
+    margin-left: 4rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1005px) {
+  .navLinks {
+    gap: 1rem;
+  }
+
+  .logo {
+    margin-left: 3.875rem;
+  }
+}
+
+@media (max-width: 840px) {
+  .navbar {
+    align-items: flex-start;
+    padding: 1rem;
+    margin: auto;
+  }
+
+  .navLinks {
+    margin-left: 0;
+    margin-top: 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    order: 2;
+  }
+
+  .logo {
+    margin-left: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .searchLogo {
+    width: 1.1rem;
+    height: 0.99rem;
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .navLinks {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .navLinks {
+    gap: 0.5rem;
+  }
+}

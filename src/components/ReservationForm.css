@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo&display=swap');
+.form-section{
+        background: linear-gradient(90deg, #EAF8BF 33%,  #FFFFFF 33%);
+        padding:50px;
+        height: 100vh;
+        
+}
+.form {
+   
+    padding: 40px; /* Adjust padding as needed */
+    background-color: #FFFFFF;
+    
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 230px;
+  }
+  .h2{
+    font-weight: normal;
+    font-family: 'Aleo', serif;
+  }
+
+  .form input {
+    margin-bottom: 5px;
+    padding: 10px;
+    border: 0.5px solid #001D3D;
+    border-radius: 4px;
+    width: 100%; /* Make the input width 100% of its container */
+    box-sizing: border-box;
+    transition: border-color 2s ease;
+    outline: none; 
+    
+  }
+  .form label {
+  font-weight: normal;
+  font-family: 'Aleo', serif;
+  margin-bottom: 8px;
+  margin-top: 15px;
+  display: block; /* Ensures labels are on new lines */
+  color: #000814;
+  }
+  .form input:focus {
+    border-color: #003566; /* Change border color when input is focused */
+  }
+  .form-container {
+   
+    width: 33%; /* Match the width of the white section in the gradient */
+    margin: 0 auto;
+  }
+  .error-message {
+    display: block;
+    color: #003566; /* Red color for error messages */
+    font-size: 0.875rem; /* Adjust font size as needed */
+    margin-top: 0.25rem;
+    margin-bottom: 20px; 
+  }
+  .form input[type="submit"] {
+    background-color: #CCA000;
+    margin-top: 25px;
+    color: #000814;
+    padding: 8px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: normal;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-family: 'Aleo', serif; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  .form input[type="submit"]:hover {
+    background-color: #F5CC00;
+  }
+  
+  .arrow {
+    margin-left: 10px;
+    font-size: 30px;
+  }
+  .res{
+    font-family: 'Aleo', serif;
+    color: #CCA000;
+    margin-bottom: 30px;
+    margin-left: 25px;
+  }
